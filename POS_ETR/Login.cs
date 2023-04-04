@@ -51,8 +51,7 @@ namespace POS_ETR
 		private void loginUser_Click(object sender, EventArgs e)
 		{
 			String user, pass;
-			user = username.Text;
-			pass = password.Text;
+			
 			con.Open();
 
 			try
@@ -71,7 +70,7 @@ namespace POS_ETR
 					Home hp = new Home();
 					hp.Show();
 					this.Hide();
-					MessageBox.Show("Login Successfully!","success");
+					MessageBox.Show("Login Successfully!","success",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
                 else
                 {

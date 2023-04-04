@@ -68,6 +68,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cashier_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cashier_home.Designer.cs">
+      <DependentUpon>cashier_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection.cs" />
     <Compile Include="GradientPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -99,6 +106,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>sampleDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sampleDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sampleDBDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Splash.cs">
       <SubType>Form</SubType>
@@ -159,6 +171,17 @@
     <None Include="sampleDBDataSet.xss">
       <DependentUpon>sampleDBDataSet.xsd</DependentUpon>
     </None>
+    <None Include="sampleDBDataSet1.xsc">
+      <DependentUpon>sampleDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sampleDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sampleDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sampleDBDataSet1.xss">
+      <DependentUpon>sampleDBDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="UserData.xsc">
       <DependentUpon>UserData.xsd</DependentUpon>
     </None>
@@ -186,6 +209,9 @@
     <None Include="Resources\bonusLogo.png" />
     <None Include="Resources\icon.png" />
     <None Include="Resources\logoutIcon.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\category.png" />
     <Content Include="sampleDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
