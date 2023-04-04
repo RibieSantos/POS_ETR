@@ -71,7 +71,7 @@ namespace POS_ETR
 					Home hp = new Home();
 					hp.Show();
 					this.Hide();
-					MessageBox.Show("Login Successfully!","success");
+					MessageBox.Show("Login Successfully!","success",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
                 else
                 {

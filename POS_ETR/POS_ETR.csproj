@@ -186,6 +186,9 @@
     <None Include="Resources\bonusLogo.png" />
     <None Include="Resources\icon.png" />
     <None Include="Resources\logoutIcon.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\product.png" />
+    <None Include="Resources\category.png" />
     <Content Include="sampleDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

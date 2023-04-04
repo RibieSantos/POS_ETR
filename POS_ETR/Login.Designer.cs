@@ -95,7 +95,7 @@
 			this.password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
 			this.password.Location = new System.Drawing.Point(36, 134);
 			this.password.Name = "password";
-			this.password.PasswordChar = '\0';
+			this.password.PasswordChar = '*';
 			this.password.PlaceholderText = "Enter Password";
 			this.password.SelectedText = "";
 			this.password.Size = new System.Drawing.Size(200, 28);
