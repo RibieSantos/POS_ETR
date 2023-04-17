@@ -21,6 +21,7 @@ namespace POS_ETR
 			InitializeComponent();
 		}
 
+		SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\johns\source\repos\POS_ETR\POS_ETR\sampleDB.mdf;Integrated Security=True;Connect Timeout=30");
 		private void userData()
 		{
 			try
@@ -110,6 +111,7 @@ namespace POS_ETR
 				cmd.ExecuteNonQuery();
 				MessageBox.Show("User Added Successfully!", "Success", MessageBoxButtons.OK);
 				username.Clear();
+				password.Clear();
 				con.Close();
 				userData();
 			}
@@ -117,6 +119,11 @@ namespace POS_ETR
 			{
 				MessageBox.Show(ex.Message);
 			}
+		}
+
+		private void password_TextChanged(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
